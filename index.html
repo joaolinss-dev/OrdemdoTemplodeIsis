@@ -645,8 +645,13 @@
       nav.scrolled { padding: 0.8rem 1.5rem; }
       .nav-links { display: none; }
       .hamburger { display: flex; }
-      #hero { padding: 0 2.5rem; gap: 2rem; }
-      section { padding: 6rem 2.5rem; }
+      #hero { grid-template-columns: 1fr; padding: 7rem 2rem 4rem; text-align: center; }
+      .hero-bg-ornament { display: none; }
+      .hero-content { padding-right: 0; display: flex; flex-direction: column; align-items: center; }
+      .hero-desc { text-align: center; }
+      .hero-photo-frame { width: min(420px, 70vw); }
+      .hero-scroll-hint { display: none; }
+      section { padding: 6rem 2rem; }
       footer { padding: 3rem 2.5rem; }
       .footer-inner { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
       .footer-brand { grid-column: 1 / -1; }
