@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
   <title>Ordem do Templo de Ísis</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -73,6 +73,8 @@
       text-transform: uppercase;
       cursor: pointer;
       transition: background 0.25s, color 0.25s, border-color 0.25s;
+      margin-left: auto;
+      white-space: nowrap;
     }
     .animation-toggle:hover,
     .animation-toggle.active {
@@ -474,6 +476,10 @@
       will-change: transform;
     }
     /* overscroll nativo contido — evita o "rubber band" no iOS */
+    html {
+      overflow-x: hidden;
+      touch-action: pan-y;
+    }
     body {
       overscroll-behavior-x: contain;
       overscroll-behavior-y: contain;
@@ -481,6 +487,20 @@
     }
 
     @media (max-width: 768px) {
+      .animation-toggle {
+        padding: 0.45rem 0.9rem;
+        font-size: 0.68rem;
+        order: 2;
+      }
+      nav {
+        gap: 0.75rem;
+      }
+      .hamburger {
+        order: 3;
+      }
+      .nav-logo {
+        order: 1;
+      }
       /* remove filtros pesados de imagem no mobile */
       .gallery-item img { filter: brightness(0.92); }
       .clipping-card img { filter: sepia(0.4); }
