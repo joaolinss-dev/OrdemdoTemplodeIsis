@@ -65,7 +65,7 @@
     .animation-toggle {
       display: none;
     }
-    @media (min-width: 769px) {
+    @media (min-width: 1025px) {
       .animation-toggle {
         display: inline-flex;
         border: 1px solid rgba(255,255,255,0.18);
@@ -1783,6 +1783,8 @@
     }
 
     if (animationsEnabled) {
+      const isMobileView = window.innerWidth < 769;
+
       /* ── HERO ENTRANCE (página carrega — sem ScrollTrigger) ── */
       gsap.timeline({ defaults: { ease: 'power4.out' }, delay: 0.1 })
         .from('.hero-tagline',     { opacity: 0, y: 30, duration: 0.9 })
@@ -1851,7 +1853,7 @@
         const content = item.querySelector('.tl-content');
         const dot     = item.querySelector('.tl-dot-inner');
         if (!content) return;
-        gsap.set(content, { opacity: 0, x: i % 2 === 0 ? -65 : 65 });
+        gsap.set(content, { opacity: 0, x: isMobileView ? 0 : (i % 2 === 0 ? -65 : 65), y: isMobileView ? 40 : 0 });
         if (dot) gsap.set(dot, { scale: 0 });
         new IntersectionObserver(([entry], obs) => {
           if (!entry.isIntersecting) return;
@@ -1868,8 +1870,8 @@
 
       /* ── INFO CARDS ── */
       revealAll('.info-card',
-        { opacity: 0, x: 55 },
-        i => ({ opacity: 1, x: 0, duration: 0.8, delay: i * 0.1, ease: 'power3.out' }));
+        isMobileView ? { opacity: 0, y: 40 } : { opacity: 0, x: 55 },
+        i => ({ opacity: 1, x: 0, y: 0, duration: 0.8, delay: i * 0.1, ease: 'power3.out' }));
 
       /* ── PRESENÇA CARDS ── */
       revealAll('.presenca-card',
@@ -1902,7 +1904,7 @@
         const th   = document.querySelector('.thesmorphoria-highlight');
         const icon = document.querySelector('.thesm-icon');
         if (!th) return;
-        gsap.set(th, { opacity: 0, x: -55 });
+        gsap.set(th, { opacity: 0, x: isMobileView ? 0 : -55, y: isMobileView ? 40 : 0 });
         if (icon) gsap.set(icon, { opacity: 0, scale: 0 });
         new IntersectionObserver(([entry], obs) => {
           if (!entry.isIntersecting) return;
