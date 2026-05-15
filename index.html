@@ -611,14 +611,16 @@
       position: fixed; inset: 0; z-index: 90;
       background: rgba(13,9,16,0.97);
       display: flex; flex-direction: column; align-items: center; justify-content: center;
-      gap: 2.5rem;
+      gap: 1.8rem;
+      padding: 5rem 1rem 2rem;
+      overflow-y: auto;
       opacity: 0; pointer-events: none;
       transition: opacity 0.35s ease;
     }
     .nav-overlay.open { opacity: 1; pointer-events: auto; }
     .nav-overlay a {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(1.6rem, 5vw, 2.2rem); font-weight: 700;
+      font-size: clamp(1.3rem, 5vw, 2rem); font-weight: 700;
       color: var(--ink-soft); text-decoration: none;
       letter-spacing: 0.05em;
       transition: color 0.3s;
