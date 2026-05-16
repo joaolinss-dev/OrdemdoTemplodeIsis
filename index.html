@@ -102,20 +102,20 @@
 
     /* NAV */
     nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
       padding: 1.5rem 4rem;
       display: flex; justify-content: space-between; align-items: center;
-      background: rgba(14,11,6,0.82);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid rgba(201,168,92,0.1);
-      transition: background 0.4s, backdrop-filter 0.4s, padding 0.4s, border-color 0.4s, transform 0.35s ease;
+      background: #0e0b06;
+      border-bottom: 1px solid rgba(201,168,92,0.15);
+      transition: padding 0.4s, border-color 0.4s, transform 0.35s ease;
     }
     nav.nav-hidden { transform: translateY(-110%); }
     nav.scrolled {
-      background: rgba(14,11,6,0.96);
+      background: rgba(14,11,6,0.97);
       backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
       padding: 1rem 4rem;
-      border-bottom: 1px solid rgba(201,168,92,0.25);
+      border-bottom: 1px solid rgba(201,168,92,0.3);
     }
     .nav-logo {
       font-family: 'Playfair Display', serif;
