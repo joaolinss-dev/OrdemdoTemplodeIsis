@@ -30,6 +30,41 @@
   <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="android-chrome-512x512.png" />
   <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+  <!-- Vercel Analytics -->
+  <script defer src="/_vercel/insights/script.js"></script>
+
+  <!-- Schema JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Soraya Magalla",
+    "jobTitle": "Bailarina, Coreógrafa e Professora",
+    "description": "Pioneira da dança árabe no Nordeste do Brasil. Especialista em Egyptian Ballet, Dança do Ventre e Flamenco.",
+    "url": "https://ordemdo-templode-isis.vercel.app",
+    "image": "https://ordemdo-templode-isis.vercel.app/Imagens%20Soraya%20Magalla/ChatGPT%20Image%2015%20de%20mai.%20de%202026%2C%2016_08_14.png",
+    "sameAs": [
+      "https://www.instagram.com/soraya.magalla/",
+      "https://www.youtube.com/channel/UCK_02IO4SJuDqAKR6lxntSQ"
+    ],
+    "knowsAbout": ["Egyptian Ballet", "Dança do Ventre", "Flamenco", "Dança Árabe", "Sagrado Feminino"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Marechal Deodoro",
+      "addressRegion": "Alagoas",
+      "addressCountry": "BR"
+    },
+    "nationality": "Brazilian",
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Coreógrafa e Professora de Dança",
+      "occupationLocation": { "@type": "Country", "name": "Brazil" }
+    }
+  }
+  </script>
+
   <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
@@ -949,6 +984,69 @@
       footer { padding: 3rem 1.5rem; }
     }
 
+    /* ── LGPD COOKIE BANNER ── */
+    #cookie-banner {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 8000;
+      background: rgba(14,11,6,0.97);
+      border-top: 1px solid rgba(201,168,92,0.2);
+      backdrop-filter: blur(12px);
+      padding: 1rem 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1.5rem; flex-wrap: wrap;
+      transform: translateY(100%);
+      transition: transform 0.5s cubic-bezier(0.4,0,0.2,1);
+    }
+    #cookie-banner.visible { transform: translateY(0); }
+    .cookie-text {
+      font-size: 0.78rem; font-weight: 300; color: var(--ink-soft);
+      line-height: 1.6; flex: 1; min-width: 200px;
+    }
+    .cookie-text a { color: var(--gold); text-decoration: underline; }
+    .cookie-btns { display: flex; gap: 0.75rem; flex-shrink: 0; }
+    .cookie-accept {
+      padding: 0.5rem 1.2rem; background: var(--gold-dark);
+      color: var(--ink); border: none; cursor: pointer;
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em;
+      text-transform: uppercase; transition: background 0.25s;
+    }
+    .cookie-accept:hover { background: var(--gold); }
+    .cookie-decline {
+      padding: 0.5rem 1rem; background: transparent;
+      color: var(--ink-muted); border: 1px solid rgba(201,168,92,0.2);
+      cursor: pointer; font-size: 0.72rem; font-weight: 500;
+      letter-spacing: 0.1em; text-transform: uppercase; transition: color 0.25s, border-color 0.25s;
+    }
+    .cookie-decline:hover { color: var(--ink-soft); border-color: rgba(201,168,92,0.4); }
+
+    /* ── SHARE BUTTON ── */
+    #share-btn {
+      position: fixed; bottom: 2rem; left: 2rem; z-index: 140;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: rgba(14,11,6,0.9);
+      border: 1px solid rgba(201,168,92,0.35);
+      color: var(--gold); cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      backdrop-filter: blur(8px);
+      transition: background 0.25s, border-color 0.25s, transform 0.25s;
+      opacity: 0; pointer-events: none;
+    }
+    #share-btn.visible { opacity: 1; pointer-events: auto; }
+    #share-btn:hover { background: rgba(201,168,92,0.12); border-color: var(--gold); transform: scale(1.08); }
+
+    /* share tooltip */
+    #share-btn::after {
+      content: 'Compartilhar';
+      position: absolute; left: 54px; top: 50%; transform: translateY(-50%);
+      white-space: nowrap; font-size: 0.68rem; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--gold); background: rgba(14,11,6,0.9);
+      border: 1px solid rgba(201,168,92,0.25);
+      padding: 0.3rem 0.7rem; border-radius: 2px;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.2s;
+    }
+    #share-btn:hover::after { opacity: 1; }
+
     /* ── LOADING SCREEN ── */
     #loading-screen {
       position: fixed; inset: 0; z-index: 9999;
@@ -1025,6 +1123,27 @@
       <div class="ls-bar-track"><div class="ls-bar-fill"></div></div>
     </div>
   </div>
+
+  <!-- LGPD COOKIE BANNER -->
+  <div id="cookie-banner" role="dialog" aria-label="Aviso de privacidade">
+    <p class="cookie-text">
+      Este site utiliza cookies essenciais para funcionamento e análise de visitas.
+      Ao continuar, você concorda com nossa política de privacidade em conformidade com a <strong>LGPD</strong>.
+    </p>
+    <div class="cookie-btns">
+      <button class="cookie-decline" id="cookie-decline">Recusar</button>
+      <button class="cookie-accept" id="cookie-accept">Aceitar</button>
+    </div>
+  </div>
+
+  <!-- SHARE BUTTON -->
+  <button id="share-btn" aria-label="Compartilhar este site">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+      <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+      <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+    </svg>
+  </button>
 
   <!-- PROGRESS BAR -->
   <div id="progress-bar"></div>
@@ -2110,6 +2229,46 @@
         if (e.key === 'Escape')     closeLb();
         if (e.key === 'ArrowLeft')  go(-1);
         if (e.key === 'ArrowRight') go(1);
+      });
+    }());
+
+    /* ── LGPD COOKIE BANNER ── */
+    (function () {
+      const banner  = document.getElementById('cookie-banner');
+      const accept  = document.getElementById('cookie-accept');
+      const decline = document.getElementById('cookie-decline');
+      if (!localStorage.getItem('otiCookies')) {
+        setTimeout(() => banner.classList.add('visible'), 3800);
+      }
+      const dismiss = (choice) => {
+        localStorage.setItem('otiCookies', choice);
+        banner.classList.remove('visible');
+      };
+      accept.addEventListener('click',  () => dismiss('accepted'));
+      decline.addEventListener('click', () => dismiss('declined'));
+    }());
+
+    /* ── SHARE BUTTON ── */
+    (function () {
+      const shareBtn = document.getElementById('share-btn');
+      lenis.on('scroll', ({ scroll }) => {
+        shareBtn.classList.toggle('visible', scroll > 600);
+      });
+      shareBtn.addEventListener('click', async () => {
+        const data = {
+          title: 'Soraya Magalla — Bailarina · Coreógrafa · Professora',
+          text:  'Pioneira da dança árabe no Nordeste do Brasil.',
+          url:   window.location.href
+        };
+        if (navigator.share) {
+          try { await navigator.share(data); } catch (_) {}
+        } else {
+          await navigator.clipboard.writeText(data.url);
+          const orig = shareBtn.style.getPropertyValue('--tip') || '';
+          shareBtn.setAttribute('data-tip', 'Link copiado!');
+          shareBtn.style.setProperty('--tip', 'Link copiado!');
+          setTimeout(() => shareBtn.setAttribute('data-tip', ''), 2000);
+        }
       });
     }());
 
