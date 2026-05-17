@@ -36,10 +36,7 @@
   <link rel="preload" as="image" href="Imagens%20Soraya%20Magalla/ChatGPT%20Image%2015%20de%20mai.%20de%202026%2C%2016_08_14.png" fetchpriority="high" />
   <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
-  <!-- Vercel Web Analytics -->
-  <script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-  </script>
+  <!-- Vercel Analytics -->
   <script defer src="/_vercel/insights/script.js"></script>
 
   <!-- Schema JSON-LD -->
