@@ -4,29 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#c9a85c" />
-  <title>OTI Brasil</title>
+  <title>Soraya Magalla — Bailarina · Coreógrafa · Professora</title>
   <meta name="description" content="Soraya Magalla — pioneira da dança árabe no Nordeste do Brasil. Bailarina, coreógrafa e professora de Egyptian Ballet, Danças Árabes e Flamenco em Alagoas." />
   <meta name="author" content="Soraya Magalla" />
-
-  <meta name="keywords" content="OTI Brasil, Soraya Magalla, bailarina, coreógrafa, dança árabe, Egyptian Ballet, Flamenco, dança do ventre, Alagoas" />
-  <link rel="canonical" href="https://otibrasil.com.br/" />
 
   <!-- Open Graph (Facebook, Instagram, WhatsApp) -->
   <meta property="og:type"        content="website" />
   <meta property="og:locale"      content="pt_BR" />
-  <meta property="og:url"         content="https://otibrasil.com.br/" />
-  <meta property="og:title"       content="OTI Brasil | Soraya Magalla — Bailarina · Coreógrafa" />
+  <meta property="og:url"         content="https://ordemdo-templode-isis.vercel.app/" />
+  <meta property="og:title"       content="Soraya Magalla — Bailarina · Coreógrafa · Professora" />
   <meta property="og:description" content="Pioneira da dança árabe no Nordeste do Brasil. Décadas dedicadas ao Egyptian Ballet, Danças Árabes e Flamenco em Alagoas." />
-  <meta property="og:image"       content="https://otibrasil.com.br/Imagens%20Soraya%20Magalla/ChatGPT%20Image%2015%20de%20mai.%20de%202026%2C%2016_08_14.png" />
+  <meta property="og:image"       content="https://ordemdo-templode-isis.vercel.app/Imagens%20Soraya%20Magalla/ChatGPT%20Image%2015%20de%20mai.%20de%202026%2C%2016_08_14.png" />
   <meta property="og:image:width"  content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:site_name"   content="OTI Brasil" />
+  <meta property="og:site_name"   content="Soraya Magalla" />
 
   <!-- Twitter / X Card -->
   <meta name="twitter:card"        content="summary_large_image" />
-  <meta name="twitter:title"       content="OTI Brasil | Soraya Magalla — Bailarina · Coreógrafa" />
+  <meta name="twitter:title"       content="Soraya Magalla — Bailarina · Coreógrafa · Professora" />
   <meta name="twitter:description" content="Pioneira da dança árabe no Nordeste do Brasil. Egyptian Ballet, Danças Árabes e Flamenco em Alagoas." />
-  <meta name="twitter:image"       content="https://otibrasil.com.br/Imagens%20Soraya%20Magalla/ChatGPT%20Image%2015%20de%20mai.%20de%202026%2C%2016_08_14.png" />
+  <meta name="twitter:image"       content="https://ordemdo-templode-isis.vercel.app/Imagens%20Soraya%20Magalla/ChatGPT%20Image%2015%20de%20mai.%20de%202026%2C%2016_08_14.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,13 +36,8 @@
   <link rel="preload" as="image" href="Imagens%20Soraya%20Magalla/ChatGPT%20Image%2015%20de%20mai.%20de%202026%2C%2016_08_14.png" fetchpriority="high" />
   <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
-  <!-- Vercel Web Analytics -->
-  <script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-  </script>
+  <!-- Vercel Analytics -->
   <script defer src="/_vercel/insights/script.js"></script>
-
-  <!-- Google Analytics: carregado apenas após consentimento de cookies (LGPD) — ver banner no final do <body> -->
 
   <!-- Schema JSON-LD -->
   <script type="application/ld+json">
@@ -352,59 +344,6 @@
     .tl-year { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 0.5rem; }
     .tl-title { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 600; color: var(--ink); margin-bottom: 0.4rem; }
     .tl-desc { font-size: 0.85rem; font-weight: 300; line-height: 1.7; color: var(--ink-muted); }
-
-    /* ORIGEM DO NOME */
-    #origem-nome { background: var(--cream-dark); text-align: center; }
-    .origem-header { max-width: 640px; margin: 0 auto 4rem; }
-    .origem-header .section-tag, .origem-header .divider { margin-left: auto; margin-right: auto; }
-    .origem-intro { font-size: 0.95rem; font-weight: 300; line-height: 1.85; color: var(--ink-soft); margin-top: 1.2rem; }
-    .origem-content {
-      display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 3rem;
-      max-width: 1000px; margin: 0 auto 3rem; text-align: left; align-items: center;
-    }
-    .origem-photo-frame { position: relative; }
-    .origem-photo-frame::before {
-      content: ''; position: absolute; inset: -12px;
-      border: 1px solid var(--gold); opacity: 0.35; z-index: 0;
-    }
-    .origem-photo {
-      position: relative; z-index: 1; aspect-ratio: 3/4;
-      overflow: hidden; background: var(--cream);
-    }
-    .origem-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
-    .origem-cards { display: flex; flex-direction: column; gap: 1.5rem; }
-    .origem-card {
-      padding: 2rem; background: var(--cream);
-      border: 1px solid rgba(201,168,92,0.15);
-      transition: border-color 0.3s, transform 0.3s;
-    }
-    .origem-card:hover { border-color: var(--gold); transform: translateY(-4px); }
-    .origem-card-icon {
-      width: 48px; height: 48px; border: 1px solid rgba(201,168,92,0.3);
-      display: flex; align-items: center; justify-content: center;
-      margin-bottom: 1.2rem; color: var(--gold);
-    }
-    .origem-card-name {
-      font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700;
-      font-style: italic; color: var(--gold); margin-bottom: 0.8rem;
-    }
-    .origem-card-desc { font-size: 0.88rem; font-weight: 300; line-height: 1.8; color: var(--ink-muted); }
-    .origem-quote {
-      max-width: 700px; margin: 0 auto; text-align: left;
-      padding: 2rem 2rem 2rem 2.5rem; border-left: 3px solid var(--gold); background: var(--cream);
-    }
-    .origem-quote p {
-      font-family: 'Playfair Display', serif; font-size: 1.05rem;
-      font-style: italic; font-weight: 400; color: var(--ink-soft); line-height: 1.7; margin: 0;
-    }
-    .origem-quote cite {
-      display: block; margin-top: 0.8rem; font-size: 0.75rem; font-weight: 600;
-      letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); font-style: normal;
-    }
-    @media (max-width: 768px) {
-      .origem-content { grid-template-columns: 1fr; }
-      .origem-photo-frame { max-width: 320px; margin: 0 auto; }
-    }
 
     /* ESPECIALIZAÇÃO */
     #especializacao { background: var(--cream-dark); }
@@ -1224,7 +1163,6 @@
   <div class="nav-overlay" id="nav-overlay">
     <a href="#sobre"         class="overlay-link" data-i18n="nav.perfil">Perfil</a>
     <a href="#formacao"      class="overlay-link" data-i18n="nav.formacao">Formação</a>
-    <a href="#origem-nome"   class="overlay-link" data-i18n="nav.origem">Origem do Nome</a>
     <a href="#especializacao" class="overlay-link" data-i18n="nav.arte">Arte</a>
     <a href="#professora"    class="overlay-link" data-i18n="nav.ensino">Ensino</a>
     <a href="#imprensa"      class="overlay-link" data-i18n="nav.imprensa">Imprensa</a>
@@ -1244,7 +1182,6 @@
     <ul class="nav-links">
       <li><a href="#sobre"          data-i18n="nav.perfil">Perfil</a></li>
       <li><a href="#formacao"       data-i18n="nav.formacao">Formação</a></li>
-      <li><a href="#origem-nome"    data-i18n="nav.origem">Origem do Nome</a></li>
       <li><a href="#especializacao" data-i18n="nav.arte">Arte</a></li>
       <li><a href="#professora"     data-i18n="nav.ensino">Ensino</a></li>
       <li><a href="#imprensa"       data-i18n="nav.imprensa">Imprensa</a></li>
@@ -1412,47 +1349,6 @@
         <div class="tl-dot"><div class="tl-dot-inner"></div></div>
         <div class="tl-empty"></div>
       </div>
-    </div>
-  </section>
-
-  <!-- ORIGEM DO NOME -->
-  <section id="origem-nome">
-    <div class="origem-header fade-in">
-      <div class="section-tag" data-i18n="nav.origem">Origem do Nome</div>
-      <h2 class="section-title" data-i18n="origem.title">De onde vem o nome<br><em>Soraya Magalla</em></h2>
-      <div class="divider"></div>
-      <p class="origem-intro" data-i18n="origem.intro">Antes de ser uma marca artística, Soraya Magalla é um nome revelado — fruto de um batismo espiritual na dança sagrada de Ísis, conduzido pela mestra Madeleine Shaara'zaad. Durante o processo, um estudo da vida passada pelo método astral trouxe à tona duas identidades que atravessam o tempo.</p>
-    </div>
-    <div class="origem-content fade-in fade-in-delay-1">
-      <div class="origem-photo-frame">
-        <div class="origem-photo">
-          <img src="Imagens%20Soraya%20Magalla/WhatsApp%20Image%202026-05-15%20at%2015.32.29.jpeg" alt="Soraya Magalla — Dança do Véu" loading="lazy">
-        </div>
-      </div>
-      <div class="origem-cards">
-        <div class="origem-card">
-          <div class="origem-card-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
-            </svg>
-          </div>
-          <div class="origem-card-name">Soraya</div>
-          <div class="origem-card-desc" data-i18n="origem.soraya.desc">O nome Soraya remonta a uma encarnação vivida na Pérsia antiga — origem que carrega o brilho e o mistério da tradição persa, presentes hoje na sensibilidade e na intensidade de sua dança.</div>
-        </div>
-        <div class="origem-card">
-          <div class="origem-card-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <circle cx="12" cy="6" r="3.5"/><path d="M12 9.5V21M7.5 14H16.5"/>
-            </svg>
-          </div>
-          <div class="origem-card-name">Magalla</div>
-          <div class="origem-card-desc" data-i18n="origem.magalla.desc">Magalla remete a uma outra encarnação, como sacerdotisa no antigo Egito — uma ligação ancestral com os rituais, a espiritualidade e o sagrado feminino que permeiam seu trabalho até hoje.</div>
-        </div>
-      </div>
-    </div>
-    <div class="origem-quote fade-in fade-in-delay-2">
-      <p data-i18n="origem.quote">"Os dois nomes revelados durante o batismo na dança sagrada de Ísis não foram escolhidos — foram reconhecidos."</p>
-      <cite data-i18n="origem.cite">— Ordem do Templo de Ísis</cite>
     </div>
   </section>
 
@@ -1744,6 +1640,14 @@
       </div>
 
       <div class="gallery-item">
+        <img src="Imagens%20Soraya%20Magalla/WhatsApp%20Image%202026-05-15%20at%2015.32.29.jpeg" alt="Dança do Véu" loading="lazy">
+        <div class="gallery-item-overlay">
+          <span class="gallery-item-cat">Performance</span>
+          <span class="gallery-item-label">Dança do Véu</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
         <img src="Imagens%20Soraya%20Magalla/WhatsApp%20Image%202026-05-15%20at%2015.37.19.jpeg" alt="Egyptian Ballet · Figurino com correntes douradas" loading="lazy">
         <div class="gallery-item-overlay">
           <span class="gallery-item-cat">Figurino</span>
@@ -1976,9 +1880,9 @@
     <p style="text-align:center; margin-top:1.2rem; font-size:0.7rem; color:rgba(240,228,232,0.18); letter-spacing:0.08em;">Desenvolvido por <span style="color:rgba(200,175,130,0.45);">João Lins</span></p>
   </footer>
 
-  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js" integrity="sha384-O55L/6rhHr9CFvrxqv5luxOCcmVaBmETbZbJDP+Do8T0pztTACsFBD/IXCNkj7DV" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script>
     gsap.registerPlugin(ScrollTrigger);
 
@@ -2268,6 +2172,7 @@
         { src: 'Imagens%20Soraya%20Magalla/WhatsApp%20Image%202026-05-15%20at%2015.32.21.jpeg',  pub: 'Performance',    title: 'Dança com espada — Egyptian Ballet' },
         { src: 'Imagens%20Soraya%20Magalla/WhatsApp%20Image%202026-05-15%20at%2015.37.09.jpeg',  pub: 'Figurino',       title: 'A Deusa do Nilo · Arapiraca, AL' },
         { src: 'Imagens%20Soraya%20Magalla/WhatsApp%20Image%202026-05-15%20at%2015.37.56.jpeg',  pub: 'Performance',    title: 'Dança da espada sob luz vermelha' },
+        { src: 'Imagens%20Soraya%20Magalla/WhatsApp%20Image%202026-05-15%20at%2015.32.29.jpeg',  pub: 'Performance',    title: 'Dança do Véu' },
         { src: 'Imagens%20Soraya%20Magalla/WhatsApp%20Image%202026-05-15%20at%2015.37.19.jpeg',  pub: 'Figurino',       title: 'Egyptian Ballet · Figurino com correntes douradas' },
         { src: 'Imagens%20Soraya%20Magalla/Captura%20de%20tela%202026-05-14%20172309.png',       pub: 'Televisão',      title: 'Entrevista · Estúdio de TV' },
         { src: 'Imagens%20Soraya%20Magalla/WhatsApp%20Image%202026-05-15%20at%2015.32.36.jpeg',  pub: 'Performance',    title: 'Expressão com pandeiro — Flamenco' },
@@ -2335,42 +2240,19 @@
       });
     }());
 
-    /* ── LGPD COOKIE BANNER + GOOGLE ANALYTICS ── */
+    /* ── LGPD COOKIE BANNER ── */
     (function () {
       const banner  = document.getElementById('cookie-banner');
       const accept  = document.getElementById('cookie-accept');
       const decline = document.getElementById('cookie-decline');
-
-      /* Google Analytics só é carregado após consentimento (LGPD) */
-      function loadAnalytics() {
-        if (window.__gaLoaded) return;
-        window.__gaLoaded = true;
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
-        window.gtag = gtag;
-        gtag('js', new Date());
-        gtag('config', 'G-GTCL911VLC');
-        gtag('config', 'G-B4Y4PEMJYT');
-        ['G-GTCL911VLC', 'G-B4Y4PEMJYT'].forEach(id => {
-          const s = document.createElement('script');
-          s.async = true;
-          s.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
-          document.head.appendChild(s);
-        });
-      }
-
-      const consent = localStorage.getItem('otiCookies');
-      if (consent === 'accepted') {
-        loadAnalytics();
-      } else if (!consent) {
+      if (!localStorage.getItem('otiCookies')) {
         setTimeout(() => banner.classList.add('visible'), 3800);
       }
-
       const dismiss = (choice) => {
         localStorage.setItem('otiCookies', choice);
         banner.classList.remove('visible');
       };
-      accept.addEventListener('click',  () => { dismiss('accepted'); loadAnalytics(); });
+      accept.addEventListener('click',  () => dismiss('accepted'));
       decline.addEventListener('click', () => dismiss('declined'));
     }());
 
@@ -2403,7 +2285,7 @@
       pt: {
         'nav.perfil':'Perfil','nav.formacao':'Formação','nav.arte':'Arte',
         'nav.ensino':'Ensino','nav.imprensa':'Imprensa','nav.presenca':'Presença',
-        'nav.galeria':'Galeria','nav.entrevistas':'Entrevistas','nav.origem':'Origem do Nome',
+        'nav.galeria':'Galeria','nav.entrevistas':'Entrevistas',
         'hero.tagline':'Marechal Deodoro · Alagoas · Brasil',
         'hero.subtitle':'Bailarina · Coreógrafa · Professora',
         'hero.desc':'Alagoana reconhecida como uma das pioneiras da dança árabe no Nordeste do Brasil. Décadas dedicadas à arte oriental, à formação de bailarinas e à preservação da cultura egípcia através do movimento e da espiritualidade.',
@@ -2422,11 +2304,6 @@
         'tl.5.title':'Expansão internacional','tl.5.desc':'Após São Paulo, Soraya levou a dança para além do território nacional, apresentando e estudando em festivais e residências na Grécia — aproximando seu trabalho do circuito internacional.',
         'tl.6.title':'Flamenco em Madrid','tl.6.desc':'Recentemente cursou flamenco em Madrid, ampliando ainda mais sua paleta de dança e fundindo a sensibilidade espanhola com sua base oriental.',
         'tl.7.title':'Legado vivo','tl.7.desc':'Com décadas de estrada, Soraya retornou ao Nordeste para semear o que aprendeu, formando gerações de bailarinas e tornando Alagoas um polo de referência na dança oriental brasileira.',
-        'origem.title':'De onde vem o nome<br><em>Soraya Magalla</em>',
-        'origem.intro':'Antes de ser uma marca artística, Soraya Magalla é um nome revelado — fruto de um batismo espiritual na dança sagrada de Ísis, conduzido pela mestra Madeleine Shaara\'zaad. Durante o processo, um estudo da vida passada pelo método astral trouxe à tona duas identidades que atravessam o tempo.',
-        'origem.soraya.desc':'O nome Soraya remonta a uma encarnação vivida na Pérsia antiga — origem que carrega o brilho e o mistério da tradição persa, presentes hoje na sensibilidade e na intensidade de sua dança.',
-        'origem.magalla.desc':'Magalla remete a uma outra encarnação, como sacerdotisa no antigo Egito — uma ligação ancestral com os rituais, a espiritualidade e o sagrado feminino que permeiam seu trabalho até hoje.',
-        'origem.quote':'"Os dois nomes revelados durante o batismo na dança sagrada de Ísis não foram escolhidos — foram reconhecidos."','origem.cite':'— Ordem do Templo de Ísis',
         'espec.title':'As <em>artes</em> que<br>definem Soraya',
         'espec.intro':'Mais do que uma dançarina, Soraya é uma artista multifacetada. Seu trabalho mistura tradição, teatro, espiritualidade e técnica — criando uma linguagem própria e única.',
         'spec.1.desc':'Fusão única entre ballet clássico e movimentos da dança egípcia. Soraya desenvolveu apresentações que unem a precisão técnica do balé à expressividade e ancestralidade da arte do Egito antigo.',
@@ -2447,7 +2324,7 @@
       en: {
         'nav.perfil':'Profile','nav.formacao':'Training','nav.arte':'Art',
         'nav.ensino':'Teaching','nav.imprensa':'Press','nav.presenca':'Presence',
-        'nav.galeria':'Gallery','nav.entrevistas':'Interviews','nav.origem':'Origin of the Name',
+        'nav.galeria':'Gallery','nav.entrevistas':'Interviews',
         'hero.tagline':'Marechal Deodoro · Alagoas · Brazil',
         'hero.subtitle':'Dancer · Choreographer · Teacher',
         'hero.desc':'From Alagoas, recognized as one of the pioneers of Arabic dance in Northeast Brazil. Decades dedicated to oriental art, training dancers, and preserving Egyptian culture through movement and spirituality.',
@@ -2466,11 +2343,6 @@
         'tl.5.title':'International expansion','tl.5.desc':'After São Paulo, Soraya took dance beyond national borders, performing and studying at festivals and residencies in Greece — bringing her work closer to the international circuit.',
         'tl.6.title':'Flamenco in Madrid','tl.6.desc':'She recently studied flamenco in Madrid, further expanding her dance palette and fusing Spanish sensibility with her oriental foundation.',
         'tl.7.title':'Living legacy','tl.7.desc':'With decades of experience, Soraya returned to the Northeast to share what she learned, training generations of dancers and making Alagoas a reference point for oriental dance in Brazil.',
-        'origem.title':'Where the name<br><em>Soraya Magalla</em> came from',
-        'origem.intro':'Before being an artistic name, Soraya Magalla is a revealed name — the result of a spiritual initiation into the sacred dance of Isis, led by master Madeleine Shaara\'zaad. During the preparation period, her past life was studied through the astral method, bringing to light two identities that transcend time.',
-        'origem.soraya.desc':'The name Soraya traces back to a life lived in ancient Persia — an origin that carries the brilliance and mystery of Persian tradition, still present today in the sensitivity and intensity of her dance.',
-        'origem.magalla.desc':'Magalla refers to another incarnation, as a priestess in ancient Egypt — an ancestral connection to ritual, spirituality, and the sacred feminine that still runs through her work today.',
-        'origem.quote':'"The two names revealed during the initiation into the sacred dance of Isis were not chosen — they were recognized."','origem.cite':'— Order of the Temple of Isis',
         'espec.title':'The <em>arts</em> that<br>define Soraya',
         'espec.intro':'More than a dancer, Soraya is a multifaceted artist. Her work blends tradition, theatre, spirituality, and technique — creating a unique and personal language.',
         'spec.1.desc':'A unique fusion between classical ballet and Egyptian dance movements. Soraya developed performances that unite the technical precision of ballet with the expressiveness and ancestry of ancient Egyptian art.',
@@ -2491,7 +2363,7 @@
       es: {
         'nav.perfil':'Perfil','nav.formacao':'Formación','nav.arte':'Arte',
         'nav.ensino':'Enseñanza','nav.imprensa':'Prensa','nav.presenca':'Presencia',
-        'nav.galeria':'Galería','nav.entrevistas':'Entrevistas','nav.origem':'Origen del Nombre',
+        'nav.galeria':'Galería','nav.entrevistas':'Entrevistas',
         'hero.tagline':'Marechal Deodoro · Alagoas · Brasil',
         'hero.subtitle':'Bailarina · Coreógrafa · Profesora',
         'hero.desc':'Alagoana reconocida como una de las pioneras de la danza árabe en el Nordeste de Brasil. Décadas dedicadas al arte oriental, a la formación de bailarinas y a la preservación de la cultura egipcia a través del movimiento y la espiritualidad.',
@@ -2510,11 +2382,6 @@
         'tl.5.title':'Expansión internacional','tl.5.desc':'Tras São Paulo, Soraya llevó la danza más allá de las fronteras nacionales, actuando y estudiando en festivales y residencias en Grecia — acercando su trabajo al circuito internacional.',
         'tl.6.title':'Flamenco en Madrid','tl.6.desc':'Recientemente cursó flamenco en Madrid, ampliando aún más su paleta de danza y fusionando la sensibilidad española con su base oriental.',
         'tl.7.title':'Legado vivo','tl.7.desc':'Con décadas de experiencia, Soraya regresó al Nordeste para sembrar lo que aprendió, formando generaciones de bailarinas y convirtiendo Alagoas en un polo de referencia en la danza oriental brasileña.',
-        'origem.title':'De dónde viene el nombre<br><em>Soraya Magalla</em>',
-        'origem.intro':'Antes de ser una marca artística, Soraya Magalla es un nombre revelado — fruto de un bautismo espiritual en la danza sagrada de Isis, guiado por la maestra Madeleine Shaara\'zaad. Durante el proceso, un estudio de la vida pasada por el método astral reveló dos identidades que atraviesan el tiempo.',
-        'origem.soraya.desc':'El nombre Soraya se remonta a una encarnación vivida en la antigua Persia — origen que porta el brillo y el misterio de la tradición persa, presentes hoy en la sensibilidad e intensidad de su danza.',
-        'origem.magalla.desc':'Magalla remite a otra encarnación, como sacerdotisa en el antiguo Egipto — una conexión ancestral con los rituales, la espiritualidad y lo sagrado femenino que impregnan su trabajo hasta hoy.',
-        'origem.quote':'"Los dos nombres revelados durante el bautismo en la danza sagrada de Isis no fueron elegidos — fueron reconocidos."','origem.cite':'— Orden del Templo de Isis',
         'espec.title':'Las <em>artes</em> que<br>definen a Soraya',
         'espec.intro':'Más que una bailarina, Soraya es una artista multifacética. Su trabajo mezcla tradición, teatro, espiritualidad y técnica — creando un lenguaje propio y único.',
         'spec.1.desc':'Fusión única entre el ballet clásico y los movimientos de la danza egipcia. Soraya desarrolló actuaciones que unen la precisión técnica del ballet con la expresividad y la ancestralidad del arte del antiguo Egipto.',
